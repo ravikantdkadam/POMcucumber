@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse--178546951\testng-customsuite.xml</span>
+                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse--9165105\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -131,14 +131,14 @@
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Validate login functionality of amzon application","Verify amazon application")</span>
                   <div class="stack-trace">org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (failed to check if window was closed: disconnected: not connected to DevTools)
   (Session info: chrome=122.0.6261.95)
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fa4bba57f4b245f7df8194b0c0b73494, findElement {value=nav-logo-sprites, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58167}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58167/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fa4bba57f4b245f7df8194b0c0b73494
+Command: [b73bf0efbab72b68b90d00966c9ed33b, findElement {value=nav-link-accountList, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64744}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64744/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b73bf0efbab72b68b90d00966c9ed33b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -150,15 +150,12 @@ Session ID: fa4bba57f4b245f7df8194b0c0b73494
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
-	at Pages.Homepage.validatehomepage(Homepage.java:27)
-	at amazonStepDefinations.HomepageSteps.validate_user_loged_in_successfully(HomepageSteps.java:50)
-	at ✽.validate user loged in successfully(file:///D:/C%20drive%20Data%2026_06_23/eclipse-workspace/POMCumcumberOct/src/main/java/Features/loginfunctioanlity.feature:8)
+	at Utils.TestBase.initilizations(TestBase.java:72)
+	at amazonStepDefinations.HomepageSteps.user_open_the_browser_and_application(HomepageSteps.java:22)
+	at ✽.user open the browser and application(file:///D:/C%20drive%20Data%2026_06_23/eclipse-workspace/POMCumcumberOct/src/main/java/Features/loginfunctioanlity.feature:5)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -170,7 +167,7 @@ Session ID: fa4bba57f4b245f7df8194b0c0b73494
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse--178546951\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse--9165105\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -231,12 +228,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runner.AmazonTestRunner')
-data.setCell(0, 3, 12608);
+data.setCell(0, 3, 7284);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -264,18 +261,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Runner.AmazonTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@4e73b552)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7c1c5936)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Validate login functionality of amzon application", "Verify amazon application")</span>
-                <span class="method-start">837 ms</span>
+                <span class="method-start">1010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">13466 ms</span>
+                <span class="method-start">8316 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

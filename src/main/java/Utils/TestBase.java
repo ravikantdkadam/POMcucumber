@@ -1,11 +1,15 @@
 package Utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -69,6 +73,14 @@ FileInputStream fis;
 			      
     	 
 		     }
+		
+		public static void Takescreenshot() throws IOException {
+			TakesScreenshot  ts= (TakesScreenshot) driver;
+			File src = ts.getScreenshotAs(OutputType.FILE);
+			File dest = new File ("D:\\C drive Data 26_06_23\\eclipse-workspace\\POMCumcumberOct\\Screenshots\\pom1.png");
+			FileUtils.copyFile(src, dest);
+		
+		}
 		     
 			
 		}
